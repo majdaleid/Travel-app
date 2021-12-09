@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <title>Test</title>
+    <!--    <link rel="stylesheet" href="/styles/resets.css">
+        <link rel="stylesheet" href="/styles/base.css">
+        <link rel="stylesheet" href="/styles/header.css">
+        <link rel="stylesheet" href="/styles/form.css">
+        <link rel="stylesheet" href="/styles/footer.css"> -->
+       
+    </head>
+
+    <body>
+
+        <header>
+            <div class="">
+                <img class="img" src=" https://previews.123rf.com/images/alexkava/alexkava1705/alexkava170500008/77303419-travel-logo-image-with-airplane-and-earth.jpg?fj=1" height="42" width="50" alt="logo">
+            </div>
+            <div class="socialnetworks">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube fa-2x"></i></a></a>
+            </div>
+            <div class="">
+                navigation
+            </div>
+        </header>
+
+        <main>
+            
+
+
+            <section>
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <input id="city" type="text" name="input" value="" onblur="onBlur()" placeholder="enter a city">
+                    <input type="date" id="date" name="date" placeholder="enter a date">
+                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                    <input type="submit" name="" value="reset the values" onclick="return Client.resetTripe(event)" onsubmit="return resetTripe(event)">
+                </form>
+            <section>
+
+            
+                <div id="results">
+                    <img id="img1" src="" alt="">
+                    <div id = "cityname"></div>
+                  
+                    <div id = "temp"></div>
+                </div>    
+        </main>
+
+        <footer>
+            <div id="copyright">
+                <p>Copyright &copy; 2021 All Rights reservered majd aleid </p>
+            </div>
+        </footer>
+        <script>
+            // Check that service workers are supported
+         
+         
+         
+         /*   if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }*/
+        </script>
+   
+    </body>
+</html>
