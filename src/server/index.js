@@ -36,13 +36,13 @@ console.log(__dirname)
 
 app.get('/', function (req, res) {
  // res.status(200).res.sendFile('dist/index.html')
-res.sendFile(path.resolve('dist/index.html'))
+ res.status(200).res.sendFile('dist/index.html')
+//res.sendFile(path.resolve('dist/index.html'))
 })
 
-app.get('/test', async (req, res) => 
-res.status(200)
-//res.json({message: 'pass!'})
-)
+app.get('/test', function(req, res){
+  res.status(200).send('OK');
+});
 app.get('/test1', (req, res) => {
   res.json({
       service: 'user-service',
@@ -144,4 +144,4 @@ const postData=async (url='',data={})=>{
   }
 
 
-  
+  module.exports = app;
